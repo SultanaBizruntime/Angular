@@ -1,0 +1,26 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h3>Hi i'm from Angular Project1</h3>
+            <hr>
+            <app-servers></app-servers>
+        </div>
+
+        <ol>
+            <li>ADD  abutton which says 'Display Details'</li>
+            <li>Add a paragraph with any content of your choice</li>
+            <li>Toogle the displaying of that paragraph</li>
+        </ol>
+        <hr>
+        <button class="btn1 btn-primary" 
+        (click)="onToggleDetails()">Display Details
+        </button>
+        <p *ngIf="showSecret">Secret Password </p>
+        <div
+        *ngFor="let logItem of log; let i = index"
+        [ngStyle]="{backgroundColor : logitem >= 5 ? 'blue' : 'transparent'}">
+        {{logItem}}
+        </div>
+    </div>
+</div>

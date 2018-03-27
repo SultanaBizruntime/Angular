@@ -1,0 +1,10 @@
+
+<h1> hi i'm from server</h1>
+
+<p>Server with ID --- is ---</p>
+<p>Server with ID {{serverID}} is {{serverStatus}} and age {{getserverStatus()}}</p>
+
+ <p [ngStyle]="{background : getColor()}"
+ [ngClass]="{online: serverStatus === 'online'}">
+ {{'sever'}} with ID {{serverID}} is {{getserverStatus()}}
+ </p>  
